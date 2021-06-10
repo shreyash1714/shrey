@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {float :left;}
+        input {float: right;width: 150px;}
+        ul {visibility: hidden;width: 1px;height: 1px;}
+        </style>
+</head>
+<body>
+    
+    <h2>ADD ORDER</h2>
+   
+    <form method="POST" style="    border: 1px solid;    width: 330px;    padding: 18px;    float: left;">
+        
+        {% csrf_token %}
+        {{ form }}
+        <br>
+        <input type="submit" value="submit">
+
+
+
+    </form>
+   
+
+</body>
+</html>
